@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
 		<link
 			rel="stylesheet"
 			href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css"
@@ -31,9 +32,9 @@
 							<i class="nav-arrow-down ti-angle-down"></i>
 						</a>
 						<ul class="subnav">
-							<li><a href="">Merchandise</a></li>
-							<li><a href="">Extras</a></li>
-							<li><a href="">Media</a></li>
+							<li><a href="#">Merchandise</a></li>
+							<li><a href="#">Extras</a></li>
+							<li><a href="#">Media</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -42,6 +43,9 @@
 				<!-- Begin: Search Button -->
 				<div class="search-btn">
 					<i class="search-icon ti-search"></i>
+				</div>
+				<div id="mobile-menu" class="menu-btn">
+					<i class="ti-menu menu-icon"></i>
 				</div>
 
 				<!-- End: Search Button -->
@@ -74,15 +78,15 @@
 					</p>
 
 					<div class="member-list clear-fix row">
-						<div class="text-center col col-third">
+						<div class="text-center col col-third s-col-full mt-32">
 							<p class="member-name">Name</p>
 							<img src="/assets/img/bandmember.jpg" alt="" class="member-img" />
 						</div>
-						<div class="text-center col col-third">
+						<div class="text-center col col-third s-col-full mt-32">
 							<p class="member-name">Name</p>
 							<img src="/assets/img/bandmember.jpg" alt="" class="member-img" />
 						</div>
-						<div class="text-center col col-third">
+						<div class="text-center col col-third s-col-full mt-32">
 							<p class="member-name">Name</p>
 							<img src="/assets/img/bandmember.jpg" alt="" class="member-img" />
 						</div>
@@ -112,7 +116,7 @@
 						</ul>
 
 						<div class="row places-list">
-							<div class="col col-third">
+							<div class="col col-third mt-16 s-col-full">
 								<img src="./assets/img/newyork.jpg" alt="" class="places-img" />
 								<div class="place-body">
 									<h3 class="place-heading">New York</h3>
@@ -120,10 +124,10 @@
 									<p class="place-desc">
 										Praesent tincidunt sed tellus ut rutrum sed vitae justo.
 									</p>
-									<a href="#" class="btn">Buy Tickets</a>
+									<a href="#" class="btn s-col-full">Buy Tickets</a>
 								</div>
 							</div>
-							<div class="col col-third">
+							<div class="col col-third mt-16 s-col-full">
 								<img src="./assets/img/paris.jpg" alt="" class="places-img" />
 								<div class="place-body">
 									<h3 class="place-heading">Paris</h3>
@@ -131,10 +135,10 @@
 									<p class="place-desc">
 										Praesent tincidunt sed tellus ut rutrum sed vitae justo.
 									</p>
-									<a href="#" class="btn">Buy Tickets</a>
+									<a href="#" class="btn s-col-full">Buy Tickets</a>
 								</div>
 							</div>
-							<div class="col col-third">
+							<div class="col col-third mt-16 s-col-full">
 								<img src="./assets/img/sanfran.jpg" alt="" class="places-img" />
 								<div class="place-body">
 									<h3 class="place-heading">San Francisco</h3>
@@ -142,7 +146,7 @@
 									<p class="place-desc">
 										Praesent tincidunt sed tellus ut rutrum sed vitae justo.
 									</p>
-									<a href="#" class="btn">Buy Tickets</a>
+									<a href="#" class="btn s-col-full">Buy Tickets</a>
 								</div>
 							</div>
 							<div class="clear-fix"></div>
@@ -155,15 +159,21 @@
 					<p class="section-sub-heading">Fan? Drop a note!</p>
 
 					<div class="row contact-content">
-						<div class="col col-half contact-info">
+						<div class="col col-half contact-info s-col-full">
 							<p><i class="ti-location-pin"></i>Chicago, US</p>
-							<p><i class="ti-mobile"></i>Phone: +00 151515</p>
-							<p><i class="ti-email"></i>Email: mail@mail.com</p>
+							<p>
+								<i class="ti-mobile"></i>Phone:
+								<a href="tel:+00 151515">+00 151515</a>
+							</p>
+							<p>
+								<i class="ti-email"></i>Email:
+								<a href="mailto:mail@mail.com">mail@mail.com</a>
+							</p>
 						</div>
-						<div class="col col-half contact-form">
+						<div class="col col-half s-col-full contact-form">
 							<form action="">
 								<div class="row">
-									<div class="col col-half">
+									<div class="col col-half s-col-full s-mt-8">
 										<input
 											type="text"
 											name=""
@@ -171,15 +181,17 @@
 											class="form-control"
 											placeholder="Name"
 											required
+											autocomplete="off"
 										/>
 									</div>
-									<div class="col col-half">
+									<div class="col col-half s-col-full s-mt-8">
 										<input
 											type="email"
 											name=""
 											id=""
 											class="form-control"
 											placeholder="Email"
+											autocomplete="off"
 											required
 										/>
 									</div>
@@ -192,6 +204,7 @@
 											id=""
 											class="form-control"
 											placeholder="Message"
+											autocomplete="off"
 											required
 										/>
 									</div>
@@ -199,7 +212,7 @@
 								<input
 									type="submit"
 									value="Send"
-									class="mt-16 btn pull-right"
+									class="mt-16 btn pull-right s-col-full contact-submit-btn"
 								/>
 							</form>
 						</div>
@@ -222,5 +235,41 @@
 				<p class="copyright">Powered by <a href="#">w3.css</a></p>
 			</div>
 		</div>
+
+		<script>
+			var headerEl = document.getElementById('header');
+			var mobileMenu = document.getElementById('mobile-menu');
+			var headerHeight = headerEl.clientHeight;
+
+			// Đóng/mở mobile menu
+			mobileMenu.onclick = function () {
+				var isClose = headerEl.clientHeight === headerHeight;
+				if (isClose) {
+					headerEl.style.height = 'auto';
+				} else {
+					headerEl.style.height = null;
+				}
+			};
+
+			// Tự đọng đóng khi chọn menu
+			var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+			for (var i = 0; i < menuItems.length; i++) {
+				var menuItem = menuItems[i];
+				var isParentMenu =
+					menuItem.nextElementSibling &&
+					menuItem.nextElementSibling.classList.contains('subnav');
+
+				if (isParentMenu) {
+					menuItem.onclick = function (e) {
+						e.preventDefault();
+					};
+				} else {
+					menuItem.onclick = function () {
+						headerEl.style.height = null;
+					};
+				}
+			}
+		</script>
 	</body>
 </html>
